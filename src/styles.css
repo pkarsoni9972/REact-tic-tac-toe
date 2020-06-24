@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.board{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+  padding :10px;
+  border: 1px solid black;
+  overflow:scroll;
+}
+
+.cell:nth-child(odd){
+  background-color: red;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.cell:nth-child(even){
+  background-color: green;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.playerWon{
+  background-color: yellow;
+}
